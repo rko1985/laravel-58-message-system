@@ -23,3 +23,6 @@ Route::get('/create/{id?}/{subject?}', 'MessagesController@create')->name('creat
 Route::post('/send', 'MessagesController@send')->name('send');
 Route::get('/sent', 'MessagesController@sent')->name('sent-messages');
 Route::get('/read/{id}', 'MessagesController@read')->name('read');
+Route::get('/delete/{id}', 'MessagesController@delete')->name('delete');
+Route::get('/deleted', 'MessagesController@deleted')->name('deleted-messages');
+Route::get('/return/{id}', 'MessagesController@return')->name('return');
